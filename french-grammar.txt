@@ -1,0 +1,60 @@
+S -> S-O-V | S-V-O | S-NE-V-PAS-O | NP
+
+S-O-V -> PR-1S DT VP-1S | PR-2S DT VP-2S | PR-3S DT VP-3S | NP-S DT VP-3S 
+S-O-V -> PR-1P DT VP-1P | PR-2P DT VP-2P | PR-3P DT VP-3P | NP-P DT VP-3P
+
+S-V-O -> PR-1S VP-1S NP | PR-2S VP-2S NP | PR-3S VP-3S NP | NP-S VP-3S NP
+S-V-O -> PR-1P VP-1P NP | PR-2P VP-2P NP | PR-3P VP-3P NP | NP-P VP-3P NP
+
+S-NE-V-PAS-O -> PR-1S NE VP-1S PAS NP | PR-2S NE VP-2S PAS NP | PR-3S NE VP-3S PAS NP | NP-S NE DT PAS VP-3S
+S-NE-V-PAS-O -> PR-1P NE VP-1P PAS NP | PR-2P NE VP-2P PAS NP | PR-3P NE VP-3P PAS NP | NP-P NE DT PAS VP-3P
+
+PR-1S -> 'je'
+PR-2S -> 'tu'
+PR-3S -> 'il' | 'elle'
+PR-1P -> 'nous'
+PR-2P -> 'vous'
+PR-3P -> 'ils' | 'elles'
+
+VP-1S -> 'mange' | 'regarde'
+VP-2S -> 'manges' | 'regardes'
+VP-3S -> 'mange' | 'regarde'
+VP-1P -> 'mangons' | 'regardons'
+VP-2P -> 'mangez' | 'regardez'
+VP-3P -> 'mangent' | 'regardent'
+
+NE -> 'ne'
+PAS -> 'pas'
+
+NP -> NP-MS | NP-FS | NP-MP | NP-FP | PNP
+NP-S -> NP-MS | NP-FS
+NP-P -> NP-MP | NP-FP
+
+NP-MS -> DT-MS N-MS | DT-MS A-MS-pre N-MS | DT-MS N-MS A-MS-post
+NP-FS -> DT-FS N-FS | DT-FS A-FS-pre N-FS | DT-FS N-FS A-FS-post
+NP-MP -> DT-P N-MP | DT-P A-MP-pre N-MP | DT-P N-MP A-MP-post
+NP-FP -> DT-P N-FP | DT-P A-FP-pre N-FP | DT-P N-FP A-FP-post
+PNP -> PN | DT PN
+
+N-MS -> 'chat' | 'poisson'
+N-FS -> 'television' | 'semaine'
+N-MP -> 'chats' | 'poissons'
+N-FP -> 'televisions' | 'semaines'
+
+DT -> DT-MS | DT-FS | DT-P
+DT-MS -> 'le'
+DT-FS -> 'la'
+DT-P -> 'les'
+PN -> 'Montreal' | 'Jonathan' | 'Canada'
+
+A-MS-pre -> 'beau' | 'joli' | 'dernier'
+A-FS-pre -> 'belle' | 'jolie' | 'derniere'
+A-MP-pre -> 'beaux' | 'jolis' | 'derniers'
+A-FP-pre -> 'belles' | 'jolies' | 'dernieres'
+
+A-MS-post -> 'dernier' | 'noir' | 'heureux'
+A-FS-post -> 'derniere' | 'noire' | 'heureuse'
+A-MP-post -> 'derniers' | 'noirs' | 'heureux'
+A-FP-post -> 'dernieres' | 'noires' | 'heureuses'
+
+
